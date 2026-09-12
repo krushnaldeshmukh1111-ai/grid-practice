@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+   
+}
+
+#container
+{
+    
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows:20% 1fr 1fr 1.5fr 1fr;
+   
+    grid-template-areas:
+    "header header"
+    "sidebar top"
+    "sidebar card "
+    "sidebar seclastbottom"
+    "sidebar bottom";
+     gap: 10px;
+    border-radius:10px;
+    overflow: hidden;
+    margin: 10px;
+                                
+    
+}
+#header{
+    background-color: antiquewhite;
+    grid-area: header;
+   
+
+
+}
+
+#sidebar{
+    background-color: pink;
+    grid-area:sidebar
+
+
+
+}
+
+#top{
+    background-color: blue;
+    grid-area: top;
+    border-radius:10px;
+ 
+
+
+}
+#card{
+    background-color: fuchsia;
+    display: grid;
+  
+     grid-template-columns:1fr 1fr;
+   padding: 50px;
+     gap: 30px;
+     border-radius:10px;
+    
+}
+
+.box{
+    background-color: green;
+    height: 100px;
+   border-radius:10px;
+  
+  
+
+
+}
+
+#seclastbottom{
+background-color: yellow;
+ grid-area: seclastbottom;
+ border-radius:10px;
+
+}
+#bottom{
+background-color:brown;
+ grid-area: bottom;
+ border-radius:10px;
+
+}
